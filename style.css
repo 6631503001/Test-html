@@ -1,0 +1,12 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+  }
