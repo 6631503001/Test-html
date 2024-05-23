@@ -21,11 +21,10 @@ body {
   .buttonhead {
     font-family:'Inter';
     position: relative;
-    bottom: 40px;
+    bottom:1.5vw;
     background-color: transparent;
-    padding: 5px 30px;
-    margin-right: 5px;
-    text-align: center;
+    padding: 0.15vw 0.4vw;
+    margin-right: 0.5vw;
     border-color: white;
     color: white;
     font-size: 16px;
