@@ -39,6 +39,17 @@ body {
     transition-duration: 500ms;
     background-color: rgb(122, 108, 202);
     cursor: pointer;
-    
   }
-  
+
+  @media only screen and (max-width: 768px) {
+    .header {
+      position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#EB6958;
+    }
+  }
