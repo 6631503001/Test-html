@@ -61,7 +61,7 @@ h1 {
 
 .mobile-nav {
   display: flex;
-  transition: 750ms;
+  transition: 500ms;
   font-family: var(--mainfont);
   position: fixed;
   top: 0;
@@ -83,7 +83,8 @@ h1 {
   color: white;
 }
 
-.open-sidebar-botton, .close-sidebar-botton{
+.open-sidebar-botton,
+.close-sidebar-botton {
   display: none;
 }
 
@@ -92,11 +93,11 @@ h1 {
 }
 
 #sidebar-active:checked~.mobile-nav {
-  transition: 500ms ;
-  right: -35%;
+  transition: 400ms;
+  right: 0%;
 }
 
-#sidebar-active:checked ~ #overlay{
+#sidebar-active:checked~#overlay {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -110,16 +111,36 @@ h1 {
   .header {
     height: 100px;
   }
-  .open-sidebar-botton, .close-sidebar-botton{
+
+  .open-sidebar-botton,
+  .close-sidebar-botton {
     display: block;
   }
+
   .nav-link {
     display: none;
   }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 430px) {
   .header {
     height: 170px;
   }
-}
+
+  #sidebar-active:checked~.mobile-nav {
+    transition: 400ms;
+    right: -20%;
+  }
+
+  @media screen and (max-device-width: 321px) {
+    .header {
+      height: 170px;
+    }
+    .mobile-nav{
+      right: -120%;
+    }
+    #sidebar-active:checked~.mobile-nav {
+      transition: 400ms;
+      right: -50%;
+    }
+  }
