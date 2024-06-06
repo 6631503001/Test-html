@@ -112,11 +112,12 @@ h1 {
     height: 100px;
   }
 
-  .open-sidebar-botton,
-  .close-sidebar-botton {
+  .open-sidebar-botton,.close-sidebar-botton {
     display: block;
   }
-
+  #background{
+    display: none;
+  }
   .nav-link {
     display: none;
   }
