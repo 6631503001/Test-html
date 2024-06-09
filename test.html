@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
+    <style>
+        .select-box {
+            margin-right: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display:flex;margin-top: 2%;">
+        <select class="select-box" id="tripType">
+            <option>Round trip</option>
+            <option>One way</option>
+            <option>Multi-city</option>
+        </select>
+        <input class="select-box" id="passenger-num" value="1">
+        <select class="select-box" id="classType">
+            <option>Economy</option>
+            <option>Business</option>
+        </select>
+    </div>
+    <button id="submitBtn">Submit</button>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            // รับค่าจาก dropdowns และ input
+            var tripType = document.getElementById('tripType').value;
+            var numPassengers = document.getElementById('passenger-num').value;
+            var classType = document.getElementById('classType').value;
+
+            // แสดงผลลัพธ์
+            alert('Trip Type: ' + tripType + '\nNumber of Passengers: ' + numPassengers + '\nClass: ' + classType);
+        });
+    </script>
+</body>
+</html>

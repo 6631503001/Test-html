@@ -12,15 +12,15 @@
     <input type="checkbox" id="sidebar-active" style="display: none;">
     <label id="overlay" for="sidebar-active"></label>
     <div class="header">
-        <a style="cursor: pointer;" href="index.html"> <img class="logo" src="assets/headphoto/Logo-base.png"
+        <a style="cursor: pointer;" href="page3.html"> <img class="logo" src="assets/headphoto/Logo-base.png"
                 title="Logo"></a>
         <div class="nav-link">
             <a class="buttonhead" href="page3.html">Check in</a>
-            <a class="buttonhead" href="page2.html">My flight</a>
-            <a class="buttonhead" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bundle&Sale</a>
-            <a class="buttonhead" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Help</a>
-            <a class="buttonhead" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">TH/EN</a>
-            <a class="buttonhead" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Login</a>
+            <a class="buttonhead" href="page3.html">My flight</a>
+            <a class="buttonhead" href="page3.html">Bundle&Sale</a>
+            <a class="buttonhead" href="page3.html">Help</a>
+            <a class="buttonhead" href="page3.html">TH/EN</a>
+            <a class="buttonhead" href="page3.html">Login</a>
         </div>
 
         <label for="sidebar-active" style="cursor: pointer;" class="open-sidebar-botton">
@@ -37,39 +37,41 @@
             </svg>
         </label>
         <a href="page3.html">Check in</a>
-        <a href="page2.html">My flight</a>
-        <a href="page2.html">Bundle&Sale</a>
-        <a href="page2.html">Help</a>
-        <a href="page2.html">TH/EN</a>
-        <a href="page2.html">Login</a>
+        <a href="page3.html">My flight</a>
+        <a href="page3.html">Bundle&Sale</a>
+        <a href="page3.html">Help</a>
+        <a href="page3.html">TH/EN</a>
+        <a href="page3.html">Login</a>
     </div>
 
-
-
-
-
-    <div class="search-bar">
+    <img src="assets/title/image-title.png" id="headphoto">
+    <div style="display: none;" class="search-bar">
         <div style="display:flex;margin-top: 2%;">
-                <select class="select-box">
-                    <option>Round trip</option>
-                    <option>One way</option>
-                    <option>Multi-city</option>
-                </select>
-            <input id="passenger-num" class="select-box" value="1">
-            
-            <select class="select-box">
+            <select id="tripType" class="select-box">
+                <option>Round trip</option>
+                <option>One way</option>
+                <option>Multi-city</option>
+            </select>
+            <input class="select-box" id="passenger-num" style="width: 3rem; text-align: center;" value="1">
+
+            <select id="seatType" class="select-box">
                 <option>Economy</option>
                 <option>Business</option>
             </select>
-            
+
         </div>
 
-            <input id="city-left" class="search-city" value="Depart">
-            <input id="city-right" class="search-city" value="Arrive">
-            <button id="search-button" class="search-city">Search</button>
-        </div>
+        <input id="city-left" class="search-city" value="Departure">
+        <input id="city-right" class="search-city" value="Arrival">
+        <button id="search-button" class="search-city">Search</button>
+    </div>
 
 
+    <div id="showSale">
+        <h1> nigga</h1>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 
