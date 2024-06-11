@@ -3,24 +3,26 @@
 
 <head>
     <title>Chocobo.com</title>
-    <link rel="stylesheet" href="assets/header.css">
-    <link rel="stylesheet" href="assets/Template.css">
+    <link rel="stylesheet" href="assets/stylesheet/header-footer.css">
+    <link rel="stylesheet" href="assets/stylesheet/Template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
     <input type="checkbox" id="sidebar-active" style="display: none;">
     <label id="overlay" for="sidebar-active"></label>
     <div class="header">
-        <a style="cursor: pointer;" href="page3.html"> <img class="logo" src="assets/headphoto/Logo-base.png"
+        <a style="cursor: pointer;" href="index.html"> <img class="logo" src="assets/headphoto/Logo-base.png"
                 title="Logo"></a>
         <div class="nav-link">
-            <a class="buttonhead" href="page3.html">Check in</a>
+            <a class="buttonhead" href="page2.html">Check in</a>
             <a class="buttonhead" href="page3.html">My flight</a>
-            <a class="buttonhead" href="page3.html">Bundle&Sale</a>
-            <a class="buttonhead" href="page3.html">Help</a>
-            <a class="buttonhead" href="page3.html">TH/EN</a>
-            <a class="buttonhead" href="page3.html">Login</a>
+            <a class="buttonhead" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bundle&Sale</a>
+            <a class="buttonhead" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Help</a>
+            <a class="buttonhead" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">TH/EN</a>
+            <a class="buttonhead" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Login</a>
         </div>
 
         <label for="sidebar-active" style="cursor: pointer;" class="open-sidebar-botton">
@@ -37,40 +39,166 @@
             </svg>
         </label>
         <a href="page3.html">Check in</a>
-        <a href="page3.html">My flight</a>
-        <a href="page3.html">Bundle&Sale</a>
-        <a href="page3.html">Help</a>
-        <a href="page3.html">TH/EN</a>
-        <a href="page3.html">Login</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">My flight</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bundle&Sale</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Help</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">TH/EN</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Login</a>
     </div>
 
-    <img src="assets/title/image-title.png" id="headphoto">
-    <div style="display: none;" class="search-bar">
-        <div style="display:flex;margin-top: 2%;">
-            <select id="tripType" class="select-box">
-                <option>Round trip</option>
-                <option>One way</option>
-                <option>Multi-city</option>
-            </select>
-            <input class="select-box" id="passenger-num" style="width: 3rem; text-align: center;" value="1">
 
-            <select id="seatType" class="select-box">
-                <option>Economy</option>
-                <option>Business</option>
-            </select>
-
+    <div style="align-content: center;margin-bottom: 10%;">
+        <img src="assets/title/image-title.png" id="headphoto">
+        <div class="search-bar">
+            <div>
+                <select id="tripType" class="select-box">
+                    <option>Round trip</option>
+                    <option>One way</option>
+                    <option>Multi-city</option>
+                </select>
+                <input class="select-box" id="passenger-num" style="width: 3rem; text-align: center;" value="1">
+                <select id="seatType" class="select-box">
+                    <option>Economy</option>
+                    <option>Business</option>
+                </select>
+            </div>
+            <div>
+                <input id="city-left" class="search-city" value="Departure">
+                <input id="city-right" class="search-city" value="Arrival">
+                <button id="search-button" class="search-city">Search</button>
+            </div>
         </div>
-
-        <input id="city-left" class="search-city" value="Departure">
-        <input id="city-right" class="search-city" value="Arrival">
-        <button id="search-button" class="search-city">Search</button>
     </div>
 
+    
+    <section id="slider">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div style="bottom: 5%;">
+                        <h3>Intrested place</h3>
+                    </div>
+                    <div class="Intrestplace-slide">
+                        <div class="slide">
+                            <div class="slider-img img-1" >
+                                <a href="#">Just to test1</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-2">
+                                <a href="#">Just to test2</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-3">
+                                <a href="#">Just to test3</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-4">
+                                <a href="#">Just to test4</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-5">
+                                <a href="#">Just to test5</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-6">
+                                <a href="#">Just to test6</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div style="bottom: 5%;">
+                        <h3>Promotion</h3>
+                    </div>
+                    <div class="promotion-slide">
+                        <div class="slide">
+                            <div class="slider-img img-1" >
+                                <a href="#">Just to test1</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-2">
+                                <a href="#">Just to test2</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-3">
+                                <a href="#">Just to test3</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-4">
+                                <a href="#">Just to test4</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-5">
+                                <a href="#">Just to test5</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-6">
+                                <a href="#">Just to test6</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="showSale">
-        <h1> nigga</h1>
-
-    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="slidercontrol.js"></script>
     <script src="script.js"></script>
 </body>
 

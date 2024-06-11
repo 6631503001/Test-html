@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Example</title>
-    <style>
-        .select-box {
-            margin-right: 10px;
-            padding: 5px;
-        }
-    </style>
+    <title>image slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="assets/Template.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter'>
 </head>
+
 <body>
-    <div style="display:flex;margin-top: 2%;">
-        <select class="select-box" id="tripType">
-            <option>Round trip</option>
-            <option>One way</option>
-            <option>Multi-city</option>
-        </select>
-        <input class="select-box" id="passenger-num" value="1">
-        <select class="select-box" id="classType">
-            <option>Economy</option>
-            <option>Business</option>
-        </select>
-    </div>
-    <button id="submitBtn">Submit</button>
-
-    <script>
-        document.getElementById('submitBtn').addEventListener('click', function() {
-            // รับค่าจาก dropdowns และ input
-            var tripType = document.getElementById('tripType').value;
-            var numPassengers = document.getElementById('passenger-num').value;
-            var classType = document.getElementById('classType').value;
-
-            // แสดงผลลัพธ์
-            alert('Trip Type: ' + tripType + '\nNumber of Passengers: ' + numPassengers + '\nClass: ' + classType);
-        });
-    </script>
+    <section id="slider">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div>
+                        <h2>Intrested place</h2>
+                    </div>
+                    <br>
+                    <div class="my-slider">
+                        <div class="slide">
+                            <div class="slider-img img-1" >
+                                <a href="#">Just to test1</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-2">
+                                <a href="#">Just to test2</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-3">
+                                <a href="#">Just to test3</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-4">
+                                <a href="#">Just to test4</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-5">
+                                <a href="#">Just to test4</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slider-img img-6">
+                                <a href="#">Just to test4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="slidercontrol.js"></script>
 </body>
+
 </html>
