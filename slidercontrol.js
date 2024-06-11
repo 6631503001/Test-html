@@ -36,7 +36,7 @@ let promotion = tns({
     controls: false,
     responsive: {
         1600: {
-            items: 4,
+            items: 3,
             gutter: 20
         },
         1024: {
