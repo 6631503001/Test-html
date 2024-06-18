@@ -79,7 +79,7 @@ body {
 #search-button {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.75);
-  font-size: 1.75;
+  font-size: 1.75vh;
   color: white;
   border-radius: 0.5rem;
   width: 6rem;
