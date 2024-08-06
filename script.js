@@ -26,8 +26,8 @@ function findFlight() {
     let seatType = document.getElementById("seatType").value;
     let city_left = document.getElementById("city-left").value;
     let city_right = document.getElementById("city-right").value;
-
-    alert('Trip Type: ' + tripType + '\nNumber of Passengers: ' + numPassengers + '\nClass: ' + seatType + "\nDeparture:" + city_left + "\nArrival: " + city_right);
+    alert (Date());
+    //alert('Trip Type: ' + tripType + '\nNumber of Passengers: ' + numPassengers + '\nClass: ' + seatType + "\nDeparture:" + city_left + "\nArrival: " + city_right);
 }
 
 
@@ -35,3 +35,20 @@ function findFlight() {
 clearInput("city-left");
 clearInput("city-right");
 document.getElementById("search-button").addEventListener('click', findFlight);
+
+document.getElementById("swap-city").addEventListener('click',function(){
+    if(document.getElementById("city-left").value == "Departure" && document.getElementById("city-right").value == "Arrival"){
+
+    }
+    else if (document.getElementById("city-left").value == "Departure") {
+        document.getElementById("city-left").value = document.getElementById("city-right").value;
+        document.getElementById("city-right").value = "";
+    }else if(document.getElementById("city-right").value == "Arrival") {
+        document.getElementById("city-right").value = document.getElementById("city-left").value;
+        document.getElementById("city-left").value = "";
+    } else{
+    let swap = document.getElementById("city-left").value;
+    document.getElementById("city-left").value = document.getElementById("city-right").value;
+    document.getElementById("city-right").value = swap;
+    }
+})
